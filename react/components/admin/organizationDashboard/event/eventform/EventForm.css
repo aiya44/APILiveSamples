@@ -1,0 +1,28 @@
+.formControlFontSize {
+  font-size: 0.875rem;
+}
+
+.no-resize {
+  resize: none;
+}
+
+.dot {
+  color: black;
+  cursor: pointer;
+  font-size: 3em;
+  line-height: 0.5;
+  margin: 0 30px;
+  opacity: 0.4;
+  text-shadow: none;
+  transition: opacity 1s ease, text-shadow 1s ease;
+}
+
+.activeDot {
+  color: rgb(0, 123, 255);
+  opacity: 1;
+  text-shadow: 0px 0px 10px;
+}
+
+.disabled {
+  pointer-events: none;
+}

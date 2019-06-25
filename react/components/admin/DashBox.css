@@ -1,0 +1,7 @@
+div .noTextDecoration {
+  text-decoration: none;
+}
+
+div .disabled-link {
+  pointer-events: none;
+}
