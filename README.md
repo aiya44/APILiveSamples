@@ -3,6 +3,7 @@ Snippets of work done on API Live for American Digital Diversity Initiative. Oth
 
 ## React
 - Login.jsx pushes state via react router's props.history.push() to a parent component where it accepts it via getDerivedStateFromProps:<br />
+<pre>
         static getDerivedStateFromProps(nextProps, prevState) {<br />
             const type = nextProps.location.state ? nextProps.location.state.type : "";<br />
             switch (type) {<br />
@@ -25,6 +26,7 @@ Snippets of work done on API Live for American Digital Diversity Initiative. Oth
                   : {};<br />
             }<br />
         }<br />
+</pre>
 - Dashboards: every dashboard's Main.jsx relies on the subroute to display the component of interest when its respective button is clicked
 - Multi-step event form components located under components/admin/organizationDashboard/event/eventform. Individual step components are imported into EventForm.jsx
 
