@@ -2,29 +2,29 @@
 Snippets of work done on API Live for American Digital Diversity Initiative. Other co-workers content will generally be commented out and noted as so.
 
 ## React
-- Login.jsx pushes state via react router's props.history.push() to a parent component where it accepts it via getDerivedStateFromProps:
-        static getDerivedStateFromProps(nextProps, prevState) {
-            const type = nextProps.location.state ? nextProps.location.state.type : "";
-            switch (type) {
-              case "login":
-                return nextProps.location.state.user.id !== prevState.currentUser.id
-                  ? {
-                      currentUser: {
-                        isLoggedIn: true,
-                        ...nextProps.location.state.user
-                      }
-                    }
-                  : {};
-              default:
-                return prevState.currentUser.isLoggedIn
-                  ? {
-                      currentUser: {
-                        ...prevState.currentUser
-                      }
-                    }
-                  : {};
-            }
-        }
+- Login.jsx pushes state via react router's props.history.push() to a parent component where it accepts it via getDerivedStateFromProps:<br />
+        static getDerivedStateFromProps(nextProps, prevState) {<br />
+            const type = nextProps.location.state ? nextProps.location.state.type : "";<br />
+            switch (type) {<br />
+              case "login":<br />
+                return nextProps.location.state.user.id !== prevState.currentUser.id<br />
+                  ? {<br />
+                      currentUser: {<br />
+                        isLoggedIn: true,<br />
+                        ...nextProps.location.state.user<br />
+                      }<br />
+                    }<br />
+                  : {};<br />
+              default:<br />
+                return prevState.currentUser.isLoggedIn<br />
+                  ? {<br />
+                      currentUser: {<br />
+                        ...prevState.currentUser<br />
+                      }<br />
+                    }<br />
+                  : {};<br />
+            }<br />
+        }<br />
 - Dashboards: every dashboard's Main.jsx relies on the subroute to display the component of interest when its respective button is clicked
 - Multi-step event form components located under components/admin/organizationDashboard/event/eventform. Individual step components are imported into EventForm.jsx
 
