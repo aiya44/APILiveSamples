@@ -1,4 +1,4 @@
-# APILiveSnippets
+# APILive Snippets
 Snippets of work done on API Live for American Digital Diversity Initiative. Other co-workers content will generally be commented out and noted as so.
 
 ## React
