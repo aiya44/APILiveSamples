@@ -1,8 +1,8 @@
-# APILive Snippets
-Snippets of work done on API Live for American Digital Diversity Initiative. Other co-workers content will generally be commented out and noted as so.
+# APILive Samples
+With permission, here are samples of my work done on API Live for American Digital Diversity Initiative. Other colleagues content will generally be commented out and noted as so. Files are organized into React, .NET, & SQL folders. Brief summary of work done:
 
 ## React
-- Login.jsx pushes state via react router's props.history.push() to an AppRoutes parent component where it accepts it via getDerivedStateFromProps:<br />
+- Login component pushes currentUser info as state via react router's props.history.push() to a higher AppRoutes component where it updates currentUser state via getDerivedStateFromProps:<br />
 <pre>
 static getDerivedStateFromProps(nextProps, prevState) {<br />
     const type = nextProps.location.state ? nextProps.location.state.type : "";<br />
